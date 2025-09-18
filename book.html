@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin:0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(rgb(8, 63, 167),grey);
+            height: 95vh;
+            background-image: url("book.img.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 80vh;
+        }
+
+        .form-container {
+            display: block;
+            margin: 50px auto;
+            background: rgba(255, 255, 255,0.5);
+            padding: 20px;
+            width: 500px;
+            border: 5px solid rgb(255, 255, 255,0.6);
+            border-radius: 20px;
+        }
+
+        h2{
+            text-align: center;
+            padding: 10px;
+            color: rgb(3, 37, 102)
+        }
+
+
+        .form-container label{
+            display: block;
+            margin: 10px 0px;
+        }
+
+        input{
+            width: 100%;
+            height: 2rem;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        form button {
+            display: block;
+            width: 30%;
+            height: 2rem;
+            background: radial-gradient(rgb(102, 148, 179), white);
+            text-align: center;
+            margin: 20px 0px;
+            border: 2px solid white;
+            border-radius: 10px;
+            justify-self: center;
+            box-shadow: 3px 3px 5px rgb(103, 103, 103),5px 5px 5px rgb(255, 255, 255) inset;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: rgb(0, 66, 128);
+        }
+
+        .sign-up-form {
+            display: none;
+        }
+
+    </style>
+    <title>Pet Adoption - BOOK</title>
+    
+<!-- java script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('myButton');
+            button.onclick = function() {
+                alert('Your Booking is Sucessfull');
+            };
+        });
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <form action="submit" class="login-form">
+            <h2>BOOK YOUR PET</h2>
+            <label for="name">First Name</label>
+            <input type='name' placeholder="Enter your First Name">
+            <label for="name">Last Name</label>
+            <input type='name' placeholder="Enter your Last Name">
+            <label for="number">Contact Number</label>
+            <input type='number' placeholder="Enter your contact number">
+            <label for="pet">Types</label>
+            <select>
+                <option>Wild Animals</option>
+                <option>Domestic Animals</option>
+                <option>Fish</option>
+                <option>Birds</option>
+                <option>Insects</option>
+                <option>Aquatic Animals</option>
+                <option>Reptiles</option>
+            </select>
+            <input type='pet' placeholder="Your options">
+            <label for="email">Email Id</label>
+            <input type='email' placeholder="Enter your Email Id">
+            <label for="password">Password</label>
+            <input type='password' placeholder="Enter your password"></input>
+            <button id="myButton">BOOK NOW</button>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+        
+    </div>
+    
+
+</body>
+</html>

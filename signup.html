@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin:0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(rgb(8, 63, 167),grey);
+            height: 95vh;
+            background-image: url("signup.img.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 80vh;
+        }
+
+        .form-container {
+            display: block;
+            margin: 50px auto;
+            background: rgba(255, 255, 255,0.5);
+            padding: 20px;
+            width: 500px;
+            border: 5px solid rgb(255, 255, 255,0.6);
+            border-radius: 20px;
+        }
+
+        h2{
+            text-align: center;
+            padding: 10px;
+            color:rgb(3, 37, 102)
+        }
+
+
+        .form-container label{
+            display: block;
+            margin: 10px 0px;
+        }
+
+        input{
+            width: 100%;
+            height: 2rem;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        form button {
+            display: block;
+            width: 30%;
+            height: 2rem;
+            background: radial-gradient(rgb(102, 148, 179), white);
+            text-align: center;
+            margin: 20px 0px;
+            border: 2px solid white;
+            border-radius: 10px;
+            justify-self: center;
+            box-shadow: 3px 3px 5px rgb(103, 103, 103), rgb(255, 255, 255) inset;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: rgb(0, 51, 128);
+        }
+
+    </style>
+    <title>Pet Adoption - Login</title>
+    
+    
+    <!----JAVA SCRIPT------->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('myButton');
+            button.onclick = function() {
+                alert('Sign-up Sucessfull');
+            };
+        });
+    </script>
+    
+    
+</head>
+<body>
+    <div class="form-container">
+
+        <form action="submit" class="sign-up-form">
+            <h2>SIGN UP</h2>
+            <label for="email">Email Id</label>
+            <input type='email' placeholder="Enter your email Id"></input>
+            <label for="password">Enter your password</label>
+            <input type='password' placeholder="Enter your password"></input>
+            <label for="password">Confirm your password</label>
+            <input type='password' placeholder="password"></input>
+            <button id="myButton">Sign-Up</button>
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </form>
+        
+        
+    </div>
+    
+
+</body>
+</html>

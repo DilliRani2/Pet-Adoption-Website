@@ -19,13 +19,6 @@ A simple and visually appealing static website that allows users to explore pets
 📍 Embedded Google Maps in the footer
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🛠 Tech Stack :
-
-Technology	Purpose
-
-HTML	- Structure of all pages
-CSS	  - Styling, layout, responsiveness
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📂 Project Structure :
 
 /Pet-Adoption-Website
